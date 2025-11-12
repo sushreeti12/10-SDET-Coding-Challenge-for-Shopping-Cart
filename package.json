@@ -1,0 +1,24 @@
+{
+  "name": "10-sdet-coding-challenge-for-shopping-cart",
+  "version": "1.0.0",
+  "description": "Automated test suite for the shopping cart",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sushreeti12/10-SDET-Coding-Challenge-for-Shopping-Cart.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/sushreeti12/10-SDET-Coding-Challenge-for-Shopping-Cart/issues"
+  },
+  "homepage": "https://github.com/sushreeti12/10-SDET-Coding-Challenge-for-Shopping-Cart#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^24.10.1",
+    "dotenv": "^17.2.3"
+  }
+}

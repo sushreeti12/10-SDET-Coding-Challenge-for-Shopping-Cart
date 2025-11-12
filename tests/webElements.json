@@ -1,0 +1,8 @@
+{
+    "loginElements":{
+        "usernameElement":"#email",
+        "passwordElement":"#password",
+        "signinButton":"xpath=//input[@value='Login']",
+        "dashboardVisible":"xpath=//h1[normalize-space(text())='My account']"
+    }
+}
