@@ -5,6 +5,15 @@
         "loginButton":"xpath=//input[@value='Login']",
         "dashboardVisible":"xpath=//h1[normalize-space(text())='My account']",
         "loginScreenElement":"xpath=//div[@class='col-lg-6 auth-form']",
-        "errorMessage":"xpath=//div[normalize-space(text())='Invalid email or password']"
+        "errorMessage":"xpath=//div[normalize-space(text())='Invalid email or password']",
+        "negativeEmailMessage":"xpath=//div[normalize-space(text())='Email is required']",
+        "negativePasswordMessage":"xpath=//div[normalize-space(text())='Password is required']"
+    },
+
+    "dashboardElements":{
+        "categoriesDropdown":"xpath=//a[@data-test='nav-categories']",
+        "handTools":"xpath=//a[@data-test='nav-categories']",
+        "hammerItem":"xpath=//h5[normalize-space(text())='Hammer']",
+        "addToCartButton":"xpath=//button[@data-test='add-to-cart']"
     }
 }
