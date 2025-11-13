@@ -2,6 +2,7 @@ import {test as setup, expect} from '@playwright/test';
 import webElements from "../tests/webElements.json";
 
 const base = require("@playwright/test");
+const loginURL = process.env.ERRORFREE_LOGIN_URL?? "";
 
 const authFile = 'playwright/.auth/user.json';
 
@@ -9,11 +10,11 @@ const authFile = 'playwright/.auth/user.json';
 
         //Perform authentication steps.
         //Go to URL
-        await page.goto(process.env.ERRORFREE_LOGIN_URL!);
+        await page.goto(loginURL);
 
         const usernameInput = page.locator(webElements.loginElements.usernameElement);
         const passwordInput = page.locator(webElements.loginElements.passwordElement);
-        const signinButton = page.locator(webElements.loginElements.signinButton);
+        const loginButton = page.locator(webElements.loginElements.loginButton);
         const dashboardDisplayed = page.locator(webElements.loginElements.dashboardVisible);
 
         console.log("Test -------> Verifies user with valid credentials logged in successfully")
@@ -22,8 +23,8 @@ const authFile = 'playwright/.auth/user.json';
         await usernameInput.fill(process.env.USER1_USERNAME!);
         await passwordInput.fill(process.env.USER1_PASSWORD!);
 
-        //Click Signin button
-        await signinButton.click();
+        //Click Login button
+        await loginButton.click();
         await page.waitForTimeout(2000);
     
         //Verify dashboard is displayed

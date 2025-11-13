@@ -2,7 +2,9 @@
     "loginElements":{
         "usernameElement":"#email",
         "passwordElement":"#password",
-        "signinButton":"xpath=//input[@value='Login']",
-        "dashboardVisible":"xpath=//h1[normalize-space(text())='My account']"
+        "loginButton":"xpath=//input[@value='Login']",
+        "dashboardVisible":"xpath=//h1[normalize-space(text())='My account']",
+        "loginScreenElement":"xpath=//div[@class='col-lg-6 auth-form']",
+        "errorMessage":"xpath=//div[normalize-space(text())='Invalid email or password']"
     }
 }
