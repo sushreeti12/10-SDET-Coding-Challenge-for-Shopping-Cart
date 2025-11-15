@@ -1,19 +1,61 @@
 {
-    "loginElements":{
-        "usernameElement":"#email",
-        "passwordElement":"#password",
-        "loginButton":"xpath=//input[@value='Login']",
-        "dashboardVisible":"xpath=//h1[normalize-space(text())='My account']",
-        "loginScreenElement":"xpath=//div[@class='col-lg-6 auth-form']",
-        "errorMessage":"xpath=//div[normalize-space(text())='Invalid email or password']",
-        "negativeEmailMessage":"xpath=//div[normalize-space(text())='Email is required']",
-        "negativePasswordMessage":"xpath=//div[normalize-space(text())='Password is required']"
-    },
+    "loginElements": {
+    "signInTab": "xpath=//a[@data-test='nav-sign-in']",
+    "usernameElement": "#email",                                    
+    "passwordElement": "xpath=//input[@data-test='password']",        
+    "loginButton": "xpath=//input[@value='Login']",         
+    "dashboardVisible": "xpath=//h1[normalize-space(text())='My account']",   
+    "loginScreenElement":"xpath=//div[@class='col-lg-6 auth-form']",
+     "errorMessage":"//div[@data-test='login-error']/div[normalize-space(text())='Invalid email or password']",
+     "invalidEmailMessage":"xpath=//div[normalize-space(text())='Email format is invalid']"
+  },
+
+  "homePageElements":{
+    "homeButton":"xpath=//a[@data-test='nav-home']",
+    "contactButton":"xpath=//a[@data-test='nav-contact']",
+    "textForContactType": "Contact",
+    "searchField": "#search-query",
+    "searchSubmit": "xpath=//button[@data-test='search-submit']",
+    "noProductFoundMessage":"xpath=//div[@data-test='search_completed']/div[@data-test='no-results']"
+  },
 
     "dashboardElements":{
         "categoriesDropdown":"xpath=//a[@data-test='nav-categories']",
-        "handTools":"xpath=//a[@data-test='nav-categories']",
+        "handTools":"xpath=//a[normalize-space(text())='Hand Tools']",
+        "powerTools":"xpath=//a[@data-test='nav-power-tools']",
+        "containerClass":"xpath=//div[@class='container ng-star-inserted']",
         "hammerItem":"xpath=//h5[normalize-space(text())='Hammer']",
-        "addToCartButton":"xpath=//button[@data-test='add-to-cart']"
-    }
+        "sheetSander": "xpath=//h5[normalize-space(text())='Sheet Sander']",
+        "addToCartButton":"xpath=//button[@data-test='add-to-cart']",
+        "menuElement":"#menu",
+        "menuCustomerName": "#customerName"
+    },
+     
+  "productsElements": 
+  {
+    "addToCartButtons": "#btn-add-to-cart",    
+    "cartIcon": "xpath=//a[@data-test='nav-cart']",
+    "quantityField": "xpath=//input[@data-test='product-quantity']" 
+
+  },
+
+  "cartElements": {
+    "cartItems": "xpath=//span[@data-test='product-title']",   
+    "cartColumns":"xpath=//ul[@class='steps-4 steps-indicator']", 
+    "cntdShoppingButton":"xpath=//button[@data-test='continue-shopping']",         
+    "chkoutButton1": "xpath=//button[text()='Proceed to checkout']",
+    "chkoutButton2": "xpath=//button[@data-test='proceed-2']",
+    "chkoutButton3": "xpath=//button[@data-test='proceed-3']",
+    "addedProductName" : "Sheet Sander",
+    "msgProductAdded": "xpath=//div[@aria-label='Product added to shopping cart.']",
+    "addState": "#state",
+    "addPostcode": "#postal_code",
+    "payOptions":"#payment-method",
+    "paymentMethodValue":"Cash on Delivery",
+    "finishShoppingButton":"xpath=//button[@data-test='finish']",
+    "msgConfirmationAfterSuccess": "xpath=//div[normalize-space(text())='Payment was successful']"
+
+
+  }
+ 
 }

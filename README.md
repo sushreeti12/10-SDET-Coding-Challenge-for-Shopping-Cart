@@ -83,30 +83,61 @@ You can now use the Test Runner extension in VSCode to run and explore the tests
 
 
 9. 📝 Frameworks and libraries : Playwright using Typescript
-Libraries:
-npm install playwright
-npm install -save-dev dotenv
+Framework: Playwright Test
+Language: TypeScript
+Libraries: dotenv, fs, path, Playwright itself
+
+Make sure you have Node.js installed (v18+ recommended).
+npm init -y
+npm install -D playwright typescript ts-node @types/node dotenv
+Optional but recommended: install browsers for Playwright
+npx playwright install
 
 10. 🗂️ File Structure of the Tests
 
-Key Files & Folders
-karate-config.js
-Sets up all environmental specifics—URLs, timeouts, app info, etc.
-
-Browser Chrome (default, local)
-
-
-💡 Start with Chrome (default).
-
-Demo tests are placed within the directory structure,
-
-📁 Current Folder Structure - Please use text editor to view this file, so you get correc formatting  - (It may have changed or evolved significantly after the time of writing of this README)
-
 10-SDET-Coding-Challenge-for-Shopping-Cart/tests   <- Main Directory
-tests											   <- Folder ontain all the test
-
-
-
+playwright/
+├─ pages/
+│  ├─ CartPage.ts
+│  ├─ HomePage.ts
+│  ├─ LoginPage.ts
+│  └─ ProductsPage.ts
+├─ tests/
+│  ├─ auth.setup.ts
+│  ├─ buyFromCart.spec.ts
+│  ├─ login.spec.ts
+│  ├─ negativeSearchForProductNotListed.spec.ts
+│  ├─ negativeTestForLoginPage.spec.ts
+│  └─ productsAddedToCart.spec.ts
+├─ .env.good
+├─ .env.buggy
+├─ BUGS.md
+├─ playwright.config.ts
+└─ README.md
 
 11. How to Switch between the URLs
+npx playwright test
+Playwright will pick up the projects defined in playwright.config.ts and run them sequentially (GOOD and BUGGY).
+
+# Actual site only
+npx playwright test --project=GOOD-SITE
+
+# BUGGY site only
+npx playwright test --project=BUGGY-SITE
+
+# UI
+npx playwright test --ui
+
+12. Negative Test Cases for the Test stories
+	US1: Search for product not listed - Test pass, no result found message displayed
+	US2: Try clicking '-' to reduce the quantity to 0 or -1 - Test pass, don't go below 1
+	US3: Search using special character - Test pass, no results found message displayed
+	US4: Search category with no product - Test pass, no results found message displayed
+	US5: Wrong email format - Test pass in actual site, error message displayed
+	US6: Try to add "Out of Stock" product: Test Fail, item added successfully to the cart
+	US7: Use backspace to update quantity: Test Fail, quantity reduced to 1 on using backspace
+	US8: Invalid postcode : Test Fail, accepts any value
+	US9: Try to clear session cookies to check if order history retain: Couldn't test as "Order History"    
+	     page not available
+	US10: Use combination that leads to zero result: Test Pass, There are no products found message displayed
 
