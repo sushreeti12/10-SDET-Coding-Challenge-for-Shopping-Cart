@@ -1,0 +1,92 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - generic [ref=e5]:
+      - generic [ref=e6]: 🐛 Bug Hunting Mode - Find & Report Bugs!
+      - button "Bug Hunting Guide" [ref=e7] [cursor=pointer]
+    - navigation [ref=e8]:
+      - generic [ref=e9]:
+        - link "Practice Software Testing - Toolshop" [ref=e10] [cursor=pointer]:
+          - /url: /
+          - img [ref=e11]
+        - menubar "Main menu" [ref=e13]:
+          - menuitem "Home" [ref=e14]:
+            - link "Home" [ref=e15] [cursor=pointer]:
+              - /url: "#/contact"
+          - menuitem "Categories" [ref=e16]:
+            - button "Categories" [ref=e17] [cursor=pointer]
+          - menuitem "Contakt" [ref=e18]:
+            - link "Contakt" [ref=e19] [cursor=pointer]:
+              - /url: "#/contact"
+          - menuitem "User Data not found" [ref=e20]:
+            - button "User Data not found" [ref=e21] [cursor=pointer]
+          - menuitem "cart" [ref=e22]:
+            - link "cart" [active] [ref=e23] [cursor=pointer]:
+              - /url: "#/checkout"
+              - generic [ref=e24]: 
+              - generic [ref=e25]: "1"
+  - generic [ref=e28]:
+    - list [ref=e30]:
+      - listitem:
+        - generic:
+          - generic: Cart
+          - generic: "1"
+      - listitem:
+        - generic:
+          - generic: Sign in
+          - generic: "2"
+      - listitem:
+        - generic:
+          - generic: Address
+          - generic: "3"
+      - listitem:
+        - generic:
+          - generic: Payment
+          - generic: "4"
+    - generic [ref=e33]:
+      - table [ref=e34]:
+        - rowgroup [ref=e35]:
+          - row "Item Quantity Price Total Total" [ref=e36]:
+            - columnheader "Item" [ref=e37]
+            - columnheader [ref=e38]
+            - columnheader "Quantity" [ref=e39]
+            - columnheader "Price" [ref=e40]
+            - columnheader "Total" [ref=e41]
+            - columnheader "Total" [ref=e42]
+        - rowgroup [ref=e43]:
+          - row "Sheet Sander $58.48 $00.00 " [ref=e44]:
+            - cell "Sheet Sander" [ref=e45]: Sheet Sander
+            - cell [ref=e46]
+            - cell [ref=e47]:
+              - spinbutton [ref=e48]: "1"
+            - cell "$58.48" [ref=e49]
+            - cell "$00.00" [ref=e50]
+            - cell "" [ref=e51]:
+              - generic [ref=e53] [cursor=pointer]: 
+        - rowgroup [ref=e54]:
+          - row "Total $58.48" [ref=e55]:
+            - cell [ref=e56]
+            - cell [ref=e57]
+            - cell [ref=e58]
+            - cell "Total" [ref=e59]:
+              - strong [ref=e60]: Total
+            - cell "$58.48" [ref=e61]
+            - cell [ref=e62]
+      - button "Proceed to checkout" [ref=e64] [cursor=pointer]
+  - paragraph [ref=e67]:
+    - text: This is a DEMO application (
+    - link "GitHub repo" [ref=e68] [cursor=pointer]:
+      - /url: https://github.com/testsmith-io/practice-software-testing
+    - text: ), used for software testing training purpose. |
+    - link "Support this project" [ref=e69] [cursor=pointer]:
+      - /url: https://testwithroy.com/b/support
+    - text: "| Banner photo by"
+    - link "Barn Images" [ref=e70] [cursor=pointer]:
+      - /url: https://unsplash.com/@barnimages
+    - text: "on"
+    - link "Unsplash" [ref=e71] [cursor=pointer]:
+      - /url: https://unsplash.com/photos/t5YUoHW6zRo
+    - text: .
+```

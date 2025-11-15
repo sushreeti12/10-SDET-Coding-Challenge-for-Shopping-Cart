@@ -1,0 +1,313 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - generic [ref=e5]:
+      - generic [ref=e6]: 🐛 Bug Hunting Mode - Find & Report Bugs!
+      - button "Bug Hunting Guide" [ref=e7] [cursor=pointer]
+    - navigation [ref=e8]:
+      - generic [ref=e9]:
+        - link "Practice Software Testing - Toolshop" [ref=e10] [cursor=pointer]:
+          - /url: /
+          - img [ref=e11]
+        - menubar "Main menu" [ref=e13]:
+          - menuitem "Home" [ref=e14]:
+            - link "Home" [ref=e15] [cursor=pointer]:
+              - /url: "#/contact"
+          - menuitem "Categories" [ref=e16]:
+            - button "Categories" [ref=e17] [cursor=pointer]
+          - menuitem "Contakt" [ref=e18]:
+            - link "Contakt" [ref=e19] [cursor=pointer]:
+              - /url: "#/contact"
+          - menuitem "Sign in" [ref=e20]:
+            - link "Sign in" [ref=e21] [cursor=pointer]:
+              - /url: "#/auth/login"
+  - generic [ref=e23]:
+    - generic [ref=e24]:
+      - paragraph [ref=e25]:
+        - img [ref=e26]
+      - separator [ref=e27]
+    - generic [ref=e28]:
+      - generic [ref=e29]:
+        - heading " Sorth" [level=4] [ref=e30]:
+          - generic [ref=e31]: 
+          - text: Sorth
+        - separator [ref=e32]
+        - combobox [ref=e35]:
+          - option [selected]
+          - option "Name (A - Z)"
+          - option "Name (Z - A)"
+          - option "Price (High - Low)"
+          - option "Price (Low - High)"
+          - option "CO₂ Rating (Best First)"
+          - option "CO₂ Rating (Worst First)"
+        - heading " Price Range" [level=4] [ref=e36]:
+          - generic [ref=e37]: 
+          - text: Price Range
+        - separator [ref=e38]
+        - generic "ngx-slider" [ref=e40]:
+          - slider "ngx-slider" [ref=e45] [cursor=pointer]
+          - slider "ngx-slider-max" [ref=e46] [cursor=pointer]
+          - generic [ref=e47]: "0"
+          - generic [ref=e48]: "200"
+          - generic [ref=e49]: "1"
+          - generic [ref=e50]: "100"
+        - heading "Search" [level=4] [ref=e52]:
+          - img [ref=e53]
+          - text: Search
+        - separator [ref=e54]
+        - generic [ref=e56]:
+          - textbox [ref=e57]
+          - button "X" [ref=e58] [cursor=pointer]
+          - button "Serch" [ref=e59] [cursor=pointer]
+        - heading " Filters" [level=4] [ref=e60]:
+          - generic [ref=e61]: 
+          - text: Filters
+        - separator [ref=e62]
+        - heading "By category:" [level=4] [ref=e63]
+        - generic [ref=e64]:
+          - generic [ref=e65]: Hand Tools
+          - list [ref=e66]:
+            - generic [ref=e68]:
+              - checkbox "Hammer" [ref=e69]
+              - text: Hammer
+            - generic [ref=e71]:
+              - checkbox "Hand Saw" [ref=e72]
+              - text: Hand Saw
+            - generic [ref=e74]:
+              - checkbox "Wrench" [ref=e75]
+              - text: Wrench
+            - generic [ref=e77]:
+              - checkbox "Screwdriver" [ref=e78]
+              - text: Screwdriver
+            - generic [ref=e80]:
+              - checkbox "Pliers" [ref=e81]
+              - text: Pliers
+        - generic [ref=e82]:
+          - generic [ref=e83]: Power Tools
+          - list [ref=e84]:
+            - generic [ref=e86]:
+              - checkbox "Grinder" [ref=e87]
+              - text: Grinder
+            - generic [ref=e89]:
+              - checkbox "Sander" [ref=e90]
+              - text: Sander
+            - generic [ref=e92]:
+              - checkbox "Saw" [ref=e93]
+              - text: Saw
+            - generic [ref=e95]:
+              - checkbox "new category" [ref=e96]
+              - text: new category
+        - generic [ref=e98]:
+          - checkbox "Other" [ref=e99]
+          - text: Other
+        - heading "By brand:" [level=4] [ref=e101]
+        - generic [ref=e103]:
+          - checkbox "Brand name 1" [ref=e104]
+          - text: Brand name 1
+        - generic [ref=e106]:
+          - checkbox "Brand name 2" [ref=e107]
+          - text: Brand name 2
+        - generic [ref=e109]:
+          - checkbox "Brand name 3" [ref=e110]
+          - text: Brand name 3
+        - generic [ref=e112]:
+          - checkbox "Brand name 4" [ref=e113]
+          - text: Brand name 4
+        - generic [ref=e115]:
+          - checkbox "Brand name 5" [ref=e116]
+          - text: Brand name 5
+        - generic [ref=e118]:
+          - checkbox "Brand name 6" [ref=e119]
+          - text: Brand name 6
+        - generic [ref=e121]:
+          - checkbox "Brand name 7" [ref=e122]
+          - text: Brand name 7
+        - generic [ref=e124]:
+          - checkbox "Brand name 8" [ref=e125]
+          - text: Brand name 8
+        - generic [ref=e127]:
+          - checkbox "Brand name 9" [ref=e128]
+          - text: Brand name 9
+        - heading "Sustainability:" [level=4] [ref=e130]
+        - generic [ref=e132]:
+          - checkbox "Show only eco-friendly products" [ref=e133]
+          - text: Show only eco-friendly products
+      - generic [ref=e134]:
+        - text: 
+        - generic [ref=e135]:
+          - 'link "ECO Combination Pliers CO₂: A B C D E $14.15" [ref=e136] [cursor=pointer]':
+            - /url: "#/product/1"
+            - generic [ref=e137]:
+              - img [ref=e138]
+              - generic [ref=e139]: ECO
+            - generic [ref=e140]:
+              - heading "Combination Pliers" [level=5] [ref=e141]
+              - generic "Environmental impact rating (A=lowest, E=highest)" [ref=e142]:
+                - text: "CO₂:"
+                - generic [ref=e143]: A
+                - generic [ref=e144]: B
+                - generic [ref=e145]: C
+                - generic [ref=e146]: D
+                - generic [ref=e147]: E
+            - generic [ref=e149]: $14.15
+          - 'link "ECO Pliers CO₂: A B C D E $12.01" [ref=e150] [cursor=pointer]':
+            - /url: "#/product/2"
+            - generic [ref=e151]:
+              - img [ref=e152]
+              - generic [ref=e153]: ECO
+            - generic [ref=e154]:
+              - heading "Pliers" [level=5] [ref=e155]
+              - generic "Environmental impact rating (A=lowest, E=highest)" [ref=e156]:
+                - text: "CO₂:"
+                - generic [ref=e157]: A
+                - generic [ref=e158]: B
+                - generic [ref=e159]: C
+                - generic [ref=e160]: D
+                - generic [ref=e161]: E
+            - generic [ref=e163]: $12.01
+          - 'link "ECO Bolt Cutters CO₂: A B C D E $48.41" [ref=e164] [cursor=pointer]':
+            - /url: "#/product/3"
+            - generic [ref=e165]:
+              - img [ref=e166]
+              - generic [ref=e167]: ECO
+            - generic [ref=e168]:
+              - heading "Bolt Cutters" [level=5] [ref=e169]
+              - generic "Environmental impact rating (A=lowest, E=highest)" [ref=e170]:
+                - text: "CO₂:"
+                - generic [ref=e171]: A
+                - generic [ref=e172]: B
+                - generic [ref=e173]: C
+                - generic [ref=e174]: D
+                - generic [ref=e175]: E
+            - generic [ref=e177]: $48.41
+          - 'link "ECO Long Nose Pliers CO₂: A B C D E Out of stock $14.24" [ref=e178] [cursor=pointer]':
+            - /url: "#/product/4"
+            - generic [ref=e179]:
+              - img [ref=e180]
+              - generic [ref=e181]: ECO
+            - generic [ref=e182]:
+              - heading "Long Nose Pliers" [level=5] [ref=e183]
+              - generic "Environmental impact rating (A=lowest, E=highest)" [ref=e184]:
+                - text: "CO₂:"
+                - generic [ref=e185]: A
+                - generic [ref=e186]: B
+                - generic [ref=e187]: C
+                - generic [ref=e188]: D
+                - generic [ref=e189]: E
+            - generic [ref=e190]:
+              - generic [ref=e191]: Out of stock
+              - generic [ref=e192]: $14.24
+          - 'link "ECO Slip Joint Pliers CO₂: A B C D E $9.17" [ref=e193] [cursor=pointer]':
+            - /url: "#/product/5"
+            - generic [ref=e195]: ECO
+            - generic [ref=e196]:
+              - heading "Slip Joint Pliers" [level=5] [ref=e197]
+              - generic "Environmental impact rating (A=lowest, E=highest)" [ref=e198]:
+                - text: "CO₂:"
+                - generic [ref=e199]: A
+                - generic [ref=e200]: B
+                - generic [ref=e201]: C
+                - generic [ref=e202]: D
+                - generic [ref=e203]: E
+            - generic [ref=e205]: $9.17
+          - 'link "ECO Claw Hammer with Shock Reduction Grip CO₂: A B C D E $13.41" [ref=e206] [cursor=pointer]':
+            - /url: "#/product/6"
+            - generic [ref=e207]:
+              - img [ref=e208]
+              - generic [ref=e209]: ECO
+            - generic [ref=e210]:
+              - heading "Claw Hammer with Shock Reduction Grip" [level=5] [ref=e211]
+              - generic "Environmental impact rating (A=lowest, E=highest)" [ref=e212]:
+                - text: "CO₂:"
+                - generic [ref=e213]: A
+                - generic [ref=e214]: B
+                - generic [ref=e215]: C
+                - generic [ref=e216]: D
+                - generic [ref=e217]: E
+            - generic [ref=e219]: $13.41
+          - 'link "ECO Hammer CO₂: A B C D E $12.58" [ref=e220] [cursor=pointer]':
+            - /url: "#/product/7"
+            - generic [ref=e221]:
+              - img [ref=e222]
+              - generic [ref=e223]: ECO
+            - generic [ref=e224]:
+              - heading "Hammer" [level=5] [ref=e225]
+              - generic "Environmental impact rating (A=lowest, E=highest)" [ref=e226]:
+                - text: "CO₂:"
+                - generic [ref=e227]: A
+                - generic [ref=e228]: B
+                - generic [ref=e229]: C
+                - generic [ref=e230]: D
+                - generic [ref=e231]: E
+            - generic [ref=e233]: $12.58
+          - 'link "ECO Claw Hammer CO₂: A B C D E $11.48" [ref=e234] [cursor=pointer]':
+            - /url: "#/product/8"
+            - generic [ref=e235]:
+              - img [ref=e236]
+              - generic [ref=e237]: ECO
+            - generic [ref=e238]:
+              - heading "Claw Hammer" [level=5] [ref=e239]
+              - generic "Environmental impact rating (A=lowest, E=highest)" [ref=e240]:
+                - text: "CO₂:"
+                - generic [ref=e241]: A
+                - generic [ref=e242]: B
+                - generic [ref=e243]: C
+                - generic [ref=e244]: D
+                - generic [ref=e245]: E
+            - generic [ref=e247]: $11.48
+          - 'link "ECO Thor Hammer CO₂: A B C D E $11.14" [ref=e248] [cursor=pointer]':
+            - /url: "#/product/9"
+            - generic [ref=e249]:
+              - img [ref=e250]
+              - generic [ref=e251]: ECO
+            - generic [ref=e252]:
+              - heading "Thor Hammer" [level=5] [ref=e253]
+              - generic "Environmental impact rating (A=lowest, E=highest)" [ref=e254]:
+                - text: "CO₂:"
+                - generic [ref=e255]: A
+                - generic [ref=e256]: B
+                - generic [ref=e257]: C
+                - generic [ref=e258]: D
+                - generic [ref=e259]: E
+            - generic [ref=e261]: $11.14
+        - navigation "Pagination" [ref=e265]:
+          - list [ref=e266]:
+            - listitem [ref=e267]:
+              - text: «
+              - generic [ref=e268]:
+                - text: Previous
+                - generic [ref=e269]: page
+            - listitem [ref=e270]:
+              - generic [ref=e271]:
+                - generic [ref=e272]: You're on page
+                - text: "1"
+            - listitem [ref=e273]:
+              - generic [ref=e274] [cursor=pointer]:
+                - generic [ref=e275]: page
+                - text: "2"
+            - listitem [ref=e276]:
+              - generic [ref=e277] [cursor=pointer]:
+                - generic [ref=e278]: page
+                - text: "3"
+            - listitem [ref=e279]:
+              - generic [ref=e280] [cursor=pointer]:
+                - text: Next
+                - generic [ref=e281]: page
+                - text: »
+  - paragraph [ref=e284]:
+    - text: This is a DEMO application (
+    - link "GitHub repo" [ref=e285] [cursor=pointer]:
+      - /url: https://github.com/testsmith-io/practice-software-testing
+    - text: ), used for software testing training purpose. |
+    - link "Support this project" [ref=e286] [cursor=pointer]:
+      - /url: https://testwithroy.com/b/support
+    - text: "| Banner photo by"
+    - link "Barn Images" [ref=e287] [cursor=pointer]:
+      - /url: https://unsplash.com/@barnimages
+    - text: "on"
+    - link "Unsplash" [ref=e288] [cursor=pointer]:
+      - /url: https://unsplash.com/photos/t5YUoHW6zRo
+    - text: .
+```
