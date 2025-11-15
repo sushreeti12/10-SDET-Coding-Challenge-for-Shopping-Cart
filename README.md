@@ -6,8 +6,9 @@ Welcome to the repository!
 
 How to install and run tests - Follow Step 1 to Step 8
 Frameworks and libraries used - Follow Step 9
-Known issues or limitations - Follow Step 9
-How to Switch between the URLs - Follow Step 10
+File Structure - Follow Step 10
+How to Switch between the URLs - Follow Step 11
+Negative Test Cases for the Test stories - Follow Step 12
 
 
 1. 📥 Clone the Repo
